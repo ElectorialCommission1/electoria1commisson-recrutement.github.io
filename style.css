@@ -170,3 +170,76 @@ select,
 .next-button:not(:disabled):hover {
     background-color: #45a049;
 }
+/* ... (All previous CSS styles remain here) ... */
+
+/* Ensure the body expands to allow footer sticking to bottom */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height to viewport height */
+}
+
+/* Main content needs flexibility to push footer down */
+.container {
+    /* ... (Existing container styles) ... */
+    margin-bottom: 20px; /* Space above footer */
+}
+
+/* --- FOOTER STYLING --- */
+.footer {
+    width: 100%;
+    background-color: #333333; /* Dark Gray Background */
+    color: white; /* White Text */
+    padding: 30px 0 10px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Minimum width for sections */
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #4CAF50; /* Highlight headings with the primary green */
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-section p, 
+.footer-section ul {
+    font-size: 0.9em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    color: #999;
+    border-top: 1px solid #444;
+}
